@@ -1,4 +1,3 @@
-import React from 'react'
 import useAuth from '../hooks/useAuth.hook'
 import AuthSpinner from '../componenets/general/authSpinner';
 import { Navigate, Outlet } from 'react-router-dom';
