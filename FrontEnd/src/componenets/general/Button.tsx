@@ -35,7 +35,7 @@ const Button = ({ variant, type, label, onClick, loading, disabled }: IProps) =>
     }
 
     const loadingIconCreator = () => {
-        return <div className="w-6 h-6 rounded-full animate-spin border-2 border-gray-400 border-gray-800"></div>
+        return <div className="w-6 h-6 rounded-full animate-spin border-2 border-gray-400  border-t-gray-800"></div>
     }
     return (
         <button type={type} onClick={onClick} className={classNameCreator()} disabled={disabled}>
