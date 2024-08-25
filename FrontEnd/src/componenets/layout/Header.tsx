@@ -32,6 +32,9 @@ const Header = () => {
                     onClick={() => navigate('/')}
                 />
                 <div className="flex gap-1">
+                    <h1 className='px-1 border border-dashed border-purple-300 rounded-lg'>
+                        AuthLoading: {isAuthLoading ? 'True' : '--'}
+                    </h1>
                     <h1 className="px-1 border border-dashed border-purple-300 rounded-lg flex items-center gap-1">
                         Auth:{isAuthenticated ? <FiUnlock className="text-green-600" /> : <FiLock className="text-red-600"></FiLock>}
                     </h1>
