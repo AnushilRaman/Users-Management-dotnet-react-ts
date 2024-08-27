@@ -81,7 +81,7 @@ const RegisterPage = () => {
         <InputField control={control} label='Last Name' inputName='lastName' error={errors?.lastName?.message} />
         <InputField control={control} label='User Name' inputName='userName' error={errors?.userName?.message} />
         <InputField control={control} label='Email' inputName='email' error={errors?.email?.message} />
-        <InputField control={control} label='Password' inputName='password' inputType='password ' error={errors?.password?.message} />
+        <InputField control={control} label='Password' inputName='password' inputType='password' error={errors?.password?.message} />
         <InputField control={control} label='Address' inputName='address' error={errors?.address?.message} />
 
         <div className='px-4 mt-2 mb-6 w-9/12 flex gap-2'>

@@ -14,7 +14,7 @@ const SideBar = () => {
         navigate(url);
     }
     return (
-        <div className="shrink-0 bg-[#754eb4] w-60 p-2 min-h-[calc(100vh-48px)] flex flex-col items-stretch">
+        <div className="shrink-0 bg-[#754eb4] w-60 p-2 min-h-[calc(100vh-48px)] flex flex-col items-stretch gap-8">
             <div className="self-center flex flex-col items-center">
                 <CiUser className="w-10 h-10 text-white" />
                 <h4 className="text-white">

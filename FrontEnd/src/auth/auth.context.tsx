@@ -89,7 +89,7 @@ const AuthContextProvider = ({ children }: IProps) => {
         initializeAuthContext()
             .then(() => console.log("initializeAuthContext was successfull"))
             .catch((error) => console.log(error))
-    })
+    }, [])
 
     const register = useCallback(
         async (firstName: string, lastName: string, userName: string, email: string, password: string, address: string) => {

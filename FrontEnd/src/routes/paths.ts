@@ -18,5 +18,5 @@ export const PATH_DASHBOARD = {
     owner: '/dashboard/owner',
     admin: '/dashboard/admin',
     manager: '/dashboard/manager',
-    user: '/dashboard/user'
+    user: '/dashboard/user',
 } 
