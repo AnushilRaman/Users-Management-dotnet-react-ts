@@ -1,4 +1,4 @@
-import { ReactNode, createContext, useReducer, useCallback, useEffect, act } from "react";
+import { ReactNode, createContext, useReducer, useCallback, useEffect } from "react";
 import {
     IAuthContext,
     IAuthContextAction,
