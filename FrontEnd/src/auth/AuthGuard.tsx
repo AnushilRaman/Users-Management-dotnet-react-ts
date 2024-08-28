@@ -1,5 +1,5 @@
 import useAuth from '../hooks/useAuth.hook'
-import AuthSpinner from '../componenets/general/authSpinner';
+import AuthSpinner from '../componenets/general/AuthSpinner';
 import { Navigate, Outlet } from 'react-router-dom';
 import { PATH_PUBLIC } from '../routes/paths';
 
