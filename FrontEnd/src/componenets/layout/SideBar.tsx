@@ -28,7 +28,7 @@ const SideBar = () => {
             <Button label="My Logs" onClick={() => { handleClick(PATH_DASHBOARD.myLogs) }} type="button" variant="secondary"></Button>
             <hr />
             <Button label="Owner Page" onClick={() => { handleClick(PATH_DASHBOARD.owner) }} type="button" variant="secondary"></Button>
-            <Button label="Owner Page" onClick={() => { handleClick(PATH_DASHBOARD.admin) }} type="button" variant="secondary"></Button>
+            <Button label="Admin Page" onClick={() => { handleClick(PATH_DASHBOARD.admin) }} type="button" variant="secondary"></Button>
             <Button label="Manager Page" onClick={() => { handleClick(PATH_DASHBOARD.manager) }} type="button" variant="secondary"></Button>
             <Button label="User Page" onClick={() => { handleClick(PATH_DASHBOARD.user) }} type="button" variant="secondary"></Button>
         </div>
