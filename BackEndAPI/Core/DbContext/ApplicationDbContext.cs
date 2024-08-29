@@ -53,6 +53,11 @@ namespace BackEndAPI.Core.DbContext
             {
                 e.ToTable("UserRoles");
             });
+            builder.Entity<Message>(e =>
+            {
+                e.HasKey(e => e.Id);
+                e.Property(e => e.Id).ValueGeneratedOnAdd();
+            });
         }
 
     }

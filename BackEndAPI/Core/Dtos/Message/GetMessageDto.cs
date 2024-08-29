@@ -2,7 +2,7 @@
 {
     public class GetMessageDto
     {
-        public long Id { get; set; }
+        public string Id { get; set; }
         public string SenderUserName { get; set; }
         public string ReceiverUserName { get; set; }
         public string Text { get; set; }

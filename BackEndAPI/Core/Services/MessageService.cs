@@ -65,7 +65,7 @@ namespace BackEndAPI.Core.Services
         {
             var message = await _context.Messages.Select(x => new GetMessageDto()
             {
-                Id = long.Parse(x.Id),
+                Id = x.Id,
                 SenderUserName = x.SendUserName,
                 ReceiverUserName = x.ReceiverUserName,
                 Text = x.Text,
@@ -78,10 +78,10 @@ namespace BackEndAPI.Core.Services
         {
             var loggedInUser = user.Identity.Name;
             var message = await _context.Messages
-                .Where(x => x.SendUserName == loggedInUser)
+                 .Where(q => q.SendUserName == loggedInUser || q.ReceiverUserName == loggedInUser)
                 .Select(x => new GetMessageDto()
                 {
-                    Id = long.Parse(x.Id),
+                    Id = x.Id,
                     SenderUserName = x.SendUserName,
                     ReceiverUserName = x.ReceiverUserName,
                     Text = x.Text,
