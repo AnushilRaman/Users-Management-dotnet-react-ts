@@ -7,8 +7,6 @@ const Layout = () => {
     const { isAuthenticated } = useAuth();
     const { pathname } = useLocation();
 
-    console.log(pathname);
-
     const sideBarRenderer = () => {
         if (isAuthenticated && pathname.toLowerCase().startsWith('/dashboard')) {
             return <SideBar />
