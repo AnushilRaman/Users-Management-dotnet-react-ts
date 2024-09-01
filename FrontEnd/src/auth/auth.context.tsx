@@ -54,7 +54,6 @@ interface IProps {
 const AuthContextProvider = ({ children }: IProps) => {
     const [state, dispatch] = useReducer(authReducer, initialAuthState);
     const navigate = useNavigate();
-    console.log('AuthContextProvider')
     const initializeAuthContext = useCallback(async () => {
         try {
             const token = getSession();
@@ -85,7 +84,6 @@ const AuthContextProvider = ({ children }: IProps) => {
     }, []);
 
     useEffect(() => {
-        console.log("AuthContext Initialization Start");
         initializeAuthContext()
             .then(() => console.log("initializeAuthContext was successfull"))
             .catch((error) => console.log(error))
@@ -101,7 +99,6 @@ const AuthContextProvider = ({ children }: IProps) => {
                 password,
                 address
             });
-            console.log('Register Result:', resposne);
             toast.success('Register successfully');
             navigate(PATH_AFTER_REGISTER);
         }, []
